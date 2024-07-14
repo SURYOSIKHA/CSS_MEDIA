@@ -1,0 +1,115 @@
+*{
+    margin : 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.cont{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: yellow; */
+}
+
+.cont > .cont1{
+    width: 100%;
+    height: 70%;
+    /* background-color: pink; */
+    display: flex;
+}
+
+.cont > .cont1 > .left{
+    width: 45%;
+    height: 100%;
+    background-color: darkblue;
+    display: flex;
+    align-items: center;
+}
+.cont > .cont1 > .left > img{
+    margin-left: 25%;
+}
+.cont > .cont1 > .right{
+    width: 55%;
+    height: 100%;
+    background-color: rgb(64, 64, 216);
+    display: flex;
+    color: white;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.cont > .cont1 > .right > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.cont > .cont1 > .right > ul > li{
+    margin: 1rem 0px;
+    font-size: 14px;
+    font-weight: 100;
+}
+.cont > .cont1 > .right > ul > li:nth-of-type(1){
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.cont > .cont2{
+    width: 100%;
+    height: 30%;
+    /* background-color: green; */
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cont .cont2 .left{
+    margin-left: 2rem;
+}
+.cont .cont2 .right{
+    margin-right: 2rem;
+}
+.cont .cont2 .right > span{
+    text-decoration: underline;
+}
+
+@media (min-width: 425px) and (max-width : 1000px){
+    .cont > .cont1{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cont > .cont1 > .right{
+        width: 100%;
+        height: 55%;
+        order: -1;
+    }
+    
+    .cont > .cont1 > .right > ul{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .cont > .cont1 > .right > ul > li{
+        margin: 7px 0px;
+    }
+    .cont > .cont1 > .left{
+        width: 100%;
+        height: 45%;
+        justify-content: center;
+    }
+    .cont > .cont1 > .left > img{
+        height: 80%;
+        margin-left: 0px;
+    }
+    .cont > .cont2{
+        justify-content: center;
+    }
+    .cont .cont2 .left{
+        margin-left: 2rem;
+        display: none;
+    }
+    
+}
